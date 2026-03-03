@@ -1,0 +1,59 @@
+user_agent: "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+
+request:
+  timeout_seconds: 20
+  delay_seconds: 1.2
+  max_retries: 3
+  backoff_seconds: 1.0
+
+cafef:
+  base_url_template: "https://cafef.vn/du-lieu/{exchange}/{ticker}-ban-lanh-dao-so-huu.chn"
+
+output:
+  cafef_parquet_path: "data/raw/cafef_board.parquet"
+
+tickers:
+  # HOSE (30) 
+  - { exchange: "hose", ticker: "vnm" }
+  - { exchange: "hose", ticker: "fpt" }
+  - { exchange: "hose", ticker: "vic" }
+  - { exchange: "hose", ticker: "vhm" }
+  - { exchange: "hose", ticker: "hpg" }
+  - { exchange: "hose", ticker: "msn" }
+  - { exchange: "hose", ticker: "ctg" }
+  - { exchange: "hose", ticker: "tcb" }
+  - { exchange: "hose", ticker: "bid" }
+  - { exchange: "hose", ticker: "vcb" }
+  - { exchange: "hose", ticker: "gas" }
+  - { exchange: "hose", ticker: "plx" }
+  - { exchange: "hose", ticker: "ssi" }
+  - { exchange: "hose", ticker: "stb" }
+  - { exchange: "hose", ticker: "vci" }
+  - { exchange: "hose", ticker: "gmd" }
+  - { exchange: "hose", ticker: "dhg" }
+  - { exchange: "hose", ticker: "pnj" }
+  - { exchange: "hose", ticker: "bwe" }
+  - { exchange: "hose", ticker: "dgc" }
+  - { exchange: "hose", ticker: "acb" }
+  - { exchange: "hose", ticker: "mbb" }
+  - { exchange: "hose", ticker: "vpb" }
+  - { exchange: "hose", ticker: "hdb" }
+  - { exchange: "hose", ticker: "vib" }
+  - { exchange: "hose", ticker: "tpb" }
+  - { exchange: "hose", ticker: "mwg" }
+  - { exchange: "hose", ticker: "vre" }
+  - { exchange: "hose", ticker: "pow" }
+  - { exchange: "hose", ticker: "nvl" }  
+
+  # HNX (11)  
+  - { exchange: "hnx", ticker: "shs" }
+  - { exchange: "hnx", ticker: "pvs" }
+  - { exchange: "hnx", ticker: "tng" }
+  - { exchange: "hnx", ticker: "bvs" }
+  - { exchange: "hnx", ticker: "ndn" }
+  - { exchange: "hnx", ticker: "l14" }
+  - { exchange: "hnx", ticker: "vcg" }
+  - { exchange: "hnx", ticker: "vcs" }
+  - { exchange: "hnx", ticker: "pch" }
+  - { exchange: "hnx", ticker: "nrc" }
+  - { exchange: "hnx", ticker: "idj" } 
