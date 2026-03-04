@@ -1,16 +1,17 @@
 user_agent: "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
 
 request:
-  timeout_seconds: 20
-  delay_seconds: 1.2
-  max_retries: 3
-  backoff_seconds: 1.0
+  delay_seconds: 2.0
 
 cafef:
   base_url_template: "https://cafef.vn/du-lieu/{exchange}/{ticker}-ban-lanh-dao-so-huu.chn"
 
+vietstock:
+  base_url_template: "https://finance.vietstock.vn/{ticker}/ban-lanh-dao.htm"
+
 output:
   cafef_parquet_path: "data/raw/cafef_board.parquet"
+  vietstock_parquet_path: "data/raw/vietstock_board.parquet"
 
 tickers:
   # HOSE (30) 
@@ -45,7 +46,7 @@ tickers:
   - { exchange: "hose", ticker: "pow" }
   - { exchange: "hose", ticker: "nvl" }  
 
-  # HNX (11)  
+  # HNX (30)  
   - { exchange: "hnx", ticker: "shs" }
   - { exchange: "hnx", ticker: "pvs" }
   - { exchange: "hnx", ticker: "tng" }
@@ -56,4 +57,23 @@ tickers:
   - { exchange: "hnx", ticker: "vcs" }
   - { exchange: "hnx", ticker: "pch" }
   - { exchange: "hnx", ticker: "nrc" }
-  - { exchange: "hnx", ticker: "idj" } 
+  - { exchange: "hnx", ticker: "idj" }
+  - { exchange: "hnx", ticker: "nvb" }
+  - { exchange: "hnx", ticker: "vc3" }
+  - { exchange: "hnx", ticker: "ceo" }
+  - { exchange: "hnx", ticker: "l18" }
+  - { exchange: "hnx", ticker: "psi" }
+  - { exchange: "hnx", ticker: "mco" }
+  - { exchange: "hnx", ticker: "sd9" }
+  - { exchange: "hnx", ticker: "vgs" }
+  - { exchange: "hnx", ticker: "dst" } 
+  - { exchange: "hnx", ticker: "shb" }
+  - { exchange: "hnx", ticker: "nvlh" }
+  - { exchange: "hnx", ticker: "thd" }
+  - { exchange: "hnx", ticker: "hjs" }
+  - { exchange: "hnx", ticker: "ve9" }
+  - { exchange: "hnx", ticker: "sd5" }
+  - { exchange: "hnx", ticker: "pv2" }
+  - { exchange: "hnx", ticker: "dic" }
+  - { exchange: "hnx", ticker: "hut" }
+  - { exchange: "hnx", ticker: "ksb" }
