@@ -263,7 +263,7 @@ This avoids hardcoding and improves reproducibility.
 Limitations:
 
 * Matching is rule-based (no fuzzy matching yet)
-* Ticker fails
+* Some tickers may fail due to temporary network issues or page structure changes.
 * Role comparison is string-based (semantic differences not resolved)
 * Snapshot timing differences between sources may reduce match rate
 
